@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
+import 'screens/report_form_screen.dart';
 
 class CampusHubApp extends StatelessWidget {
   const CampusHubApp({super.key});
@@ -34,6 +35,7 @@ class CampusHubApp extends StatelessWidget {
       routes: {
         '/': (_) => const HomeScreen(),
         '/login': (_) => const LoginScreen(),
+        '/report': (_) => const ReportFormScreen(),
       },
     );
   }

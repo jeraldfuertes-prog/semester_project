@@ -77,7 +77,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(
                     width: 580,
                     child: Text(
-                      'A simple starting point for student services. This prototype demonstrates a Flutter Web home page, reusable UI components, and navigation to a login form.',
+                      'A simple starting point for student services. This prototype demonstrates Flutter Web navigation, a login form, and a simulated campus issue reporting feature.',
                       style: TextStyle(
                         fontSize: 17,
                         height: 1.6,
@@ -91,6 +91,12 @@ class HomeScreen extends StatelessWidget {
                     icon: Icons.arrow_forward_rounded,
                     onPressed: () =>
                         Navigator.pushNamed(context, '/login'),
+                  ),
+                  const SizedBox(height: 12),
+                  AppButton(
+                    label: 'Submit a Campus Report',
+                    icon: Icons.report_problem_outlined,
+                    onPressed: () => Navigator.pushNamed(context, '/report'),
                   ),
                   const SizedBox(height: 46),
                   Wrap(
@@ -116,7 +122,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 28),
                   const Text(
-                    'Activity 8 baseline • Backend not connected',
+                    'Activity 9 extension • Backend not connected',
                     style: TextStyle(color: Color(0xFF7A8795), fontSize: 12),
                   ),
                 ],
